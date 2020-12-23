@@ -38,9 +38,6 @@ public class MyFrame extends JFrame {
 		this.setSize(width, height);
 		this.setVisible(true);
 
-		ImageIcon icon = new ImageIcon("./");
-		this.setIconImage(icon.getImage());
-		//this.getContentPane().setBackground(Color.blue);
 		initPanel();
 		this.add(pani);
 	}
