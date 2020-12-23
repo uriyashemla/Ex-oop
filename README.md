@@ -13,13 +13,13 @@ At the beginning, we did NodeData class that implement node_data interface (whic
 
 Then, we did DWGraph_DS class which implements directed_weighted_graph interface. 
 In this class, we make functions such as:
-`getEdge` that returns the edge between the src to the dest nodes.
+`getEdge` that returns the edge between the source node to the destination node.
 
 `connect` that connect an edge between two nodes, with an edge with weight >=0
 
 Also, other function such as: `addNode`, `removeNode`, `removeEdge` and more.
 
-Then/ after that, we did DWGraph_Algo class that implements dw _graph_algorithms interface (which represent a collection of algorithms on graphs).
+After that, we did DWGraph_Algo class that implements dw _graph_algorithms interface (which represent a collection of algorithms on graphs).
 In this class, we make functions such as:
 `isConnected` that returns true or false whether the graph is connected. 
 A graph is connected if every pair of vertices in the graph is connected. This means that there is a path between every pair of vertices.
