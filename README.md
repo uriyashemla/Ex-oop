@@ -2,7 +2,9 @@
 
 In this first part of the assignment, we developed infrastructure of data structure, algorithms, and display system.
 This assignment deals with the development of a data structure of positive weighted, directed graph.
+
 A weighted graph is a graph in which each edge is given a numerical weight.
+
 A directed graph is a set of objects (called vertices or nodes) that are connected together, where all the edges are directed from one vertex to another.
 
 After implement the data structure, we implement several algorithms on the graph including bonding test (to check if the graph is connected), short path calculation (minimum distance), finding the shortest path (a collection of vertices between the source and the destination) and the ability to save and restore the graph from a file in JSON format.
