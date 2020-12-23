@@ -13,6 +13,7 @@ At the beginning, we did NodeData class that implement node_data interface (whic
 
 Then, we did DWGraph_DS class which implements directed_weighted_graph interface. 
 In this class, we make functions such as:
+
 `getEdge` that returns the edge between the source node to the destination node.
 
 `connect` that connect an edge between two nodes, with an edge with weight >=0
