@@ -21,7 +21,9 @@ Also, other function such as: `addNode`, `removeNode`, `removeEdge` and more.
 
 After that, we did DWGraph_Algo class that implements dw _graph_algorithms interface (which represent a collection of algorithms on graphs).
 In this class, we make functions such as:
+
 `isConnected` that returns true or false whether the graph is connected. 
+
 A graph is connected if every pair of vertices in the graph is connected. This means that there is a path between every pair of vertices.
 
 `shortestPathDist` that returns the length of the shortest path between src to dest.
