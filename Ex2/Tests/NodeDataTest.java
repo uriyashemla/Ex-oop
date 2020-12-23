@@ -13,16 +13,6 @@ public class NodeDataTest {
         }
 
         @Test
-        void testGetLocation() {
-
-        }
-
-        @Test
-        void testSetLocation() {
-
-        }
-
-        @Test
         void testGetWeight() {
             node_data n = new NodeData(1,1.5,"",-1);
             assertEquals(1.5,n.getWeight());
