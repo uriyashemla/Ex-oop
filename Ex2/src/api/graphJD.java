@@ -55,8 +55,8 @@ public class graphJD implements JsonDeserializer<directed_weighted_graph> {
                 for (JsonElement tempe : Jsonnodes) {
                     JsonElement valuese = tempe.getAsJsonObject();
                     int NodeKey = valuese.getAsJsonObject().get("id").getAsInt();
-                    String NodePos = valuese.getAsJsonObject().get("pos").getAsString();
-                    String[] PosArr = NodePos.split(",");
+                    String Pos = valuese.getAsJsonObject().get("pos").getAsString();
+                    String[] PosArr = Pos.split(",");
                     double[] DoublePos = new double[3];
                     for (int i = 0; i < PosArr.length; i++) {
                         DoublePos[i] = Double.parseDouble(PosArr[i]);
@@ -71,12 +71,12 @@ public class graphJD implements JsonDeserializer<directed_weighted_graph> {
                 int edgesize = 0;
                 JsonArray edgesJson = jsonObject.get("Edges").getAsJsonArray();
                 flagi=0;
-                for (JsonElement tmpEdge : edgesJson) {
-                    JsonElement tmpEd = tmpEdge.getAsJsonObject();
-                    int EdSrc = tmpEd.getAsJsonObject().get("src").getAsInt();
-                    int EdDest = tmpEd.getAsJsonObject().get("dest").getAsInt();
-                    double EdWeight = tmpEd.getAsJsonObject().get("w").getAsDouble();
-                    g.connect(EdSrc, EdDest, EdWeight);
+                for (JsonElement temoiahu : edgesJson) {
+                    JsonElement temped = temoiahu.getAsJsonObject();
+                    int thesrc = temped.getAsJsonObject().get("src").getAsInt();
+                    int thedest = temped.getAsJsonObject().get("dest").getAsInt();
+                    double thew = temped.getAsJsonObject().get("w").getAsDouble();
+                    g.connect(thesrc, thedest, thew);
                     if(g.edgeSize()!=edgesize+1){
                         flag=false;
                     }
